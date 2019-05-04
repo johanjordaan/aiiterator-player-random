@@ -5,9 +5,9 @@
   "license": "MIT",
   "scripts": {
     "start": "node src/player",
-    "test": "NODE_ENV=test jest --watchAll",
-    "tc": "NODE_ENV=test jest --watchAll --coverage",
-    "coverage": "jest --coverage"
+    "test": "cross-env NODE_ENV=test jest --watchAll",
+    "tc": "cross-env NODE_ENV=test jest --watchAll --coverage",
+    "coverage": "cross-env NODE_ENV=test jest --coverage"
   },
   "devDependencies": {
     "jest": "^23.5.0",
@@ -19,6 +19,7 @@
   "dependencies": {
     "aiiterator-core": "https://github.com/johanjordaan/aiiterator-core",
     "body-parser": "^1.18.3",
+    "cross-env": "^5.2.0",
     "express": "^4.16.3",
     "express-session": "^1.15.6",
     "jsonwebtoken": "^8.3.0",
